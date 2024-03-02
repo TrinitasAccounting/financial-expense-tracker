@@ -1,15 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Temporary from './components/Temporary';
+import TransactionsList from './components/TransactionList';
+
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />,
+        children: [
+            {
+                path: "/",
+                element: <Temporary />
+            },
+            {
+                path: "/transactions",
+                element: <TransactionsList />
+            }
+            // {
+            //   path: "/pet_list"
+            // }
+        ]
+    }
+])
+
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<RouterProvider router={router} />);
+
+// const myFirstElement = <h1>Testing</h1>
+
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<App />
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

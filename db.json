@@ -2,7 +2,13 @@
     "transactions": [
         {
             "id": 1,
-            "test": "Please work"
+            "bank-description": "Shell Gas",
+            "amount": 77.77
+        },
+        {
+            "id": 2,
+            "bank-description": "Exxon Gas",
+            "amount": 8.88
         }
     ]
 }
