@@ -26,14 +26,14 @@ import TransactionsList from './TransactionList';
 
 
 //Having to dynamically change inside of the drawer for now
-let currentPage;
-if (window.location.pathname === "/") {
-  currentPage = <Temporary />;
-} else if (window.location.pathname === "/transactions") {
-  currentPage = <TransactionsList />;
-} else {
-  currentPage = <h2>404 not found</h2>;
-}
+// let currentPage;
+// if (window.location.pathname === "/") {
+//   currentPage = <Temporary />;
+// } else if (window.location.pathname === "/transactions") {
+//   currentPage = <TransactionsList />;
+// } else {
+//   currentPage = <h2>404 not found</h2>;
+// }
 
 
 
@@ -86,22 +86,23 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <Toolbar />
-      <Divider />
+
+      {/* <Divider />
       <List>
-        {['Dashboard', 'Transactions', 'Send email', 'Drafts'].map((text, index) => (
+        {['Dashboard', 'Transactions', 'Revenue'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              {/* <NavLink to={`/${text}`}>
-              </NavLink> */}
+              <NavLink to={`/${text}`}>
+              </NavLink>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider />
+      <Divider /> */}
       <List>
         <ListItem key="Dashboard" disablePadding>
           <ListItemButton>
@@ -114,20 +115,34 @@ function ResponsiveDrawer(props) {
           </ListItemButton>
         </ListItem>
       </List>
-      <Divider>
-        <List>
-          <ListItem key="Transactions" disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-              </ListItemIcon>
-              <NavLink to="/transactions">
-                <ListItemText primary="Transactions" />
-              </NavLink>
-            </ListItemButton>
-          </ListItem>
-        </List>
-      </Divider>
+
+      <List>
+        <ListItem key="Transactions" disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
+            </ListItemIcon>
+            <NavLink to="/transactions">
+              <ListItemText primary="Transactions" />
+            </NavLink>
+          </ListItemButton>
+        </ListItem>
+      </List>
+
+
+      <List>
+        <ListItem key="Revenue" disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
+            </ListItemIcon>
+            <NavLink to="/revenue">
+              <ListItemText primary="Revenue" />
+            </NavLink>
+          </ListItemButton>
+        </ListItem>
+      </List>
+
     </div>
   );
 
@@ -156,7 +171,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Finance Tracker
           </Typography>
         </Toolbar>
       </AppBar>

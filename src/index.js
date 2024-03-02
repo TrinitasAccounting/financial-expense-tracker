@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Temporary from './components/Temporary';
 import TransactionsList from './components/TransactionList';
+import RevenueDashboard from './components/RevenueDashboard';
 
 
 const router = createBrowserRouter([
@@ -22,10 +23,11 @@ const router = createBrowserRouter([
             {
                 path: "/transactions",
                 element: <TransactionsList />
+            },
+            {
+                path: "/revenue",
+                element: <RevenueDashboard />
             }
-            // {
-            //   path: "/pet_list"
-            // }
         ]
     }
 ])

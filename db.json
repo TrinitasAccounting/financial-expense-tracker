@@ -1,14 +1,89 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "bank-description": "Shell Gas",
-            "amount": 77.77
-        },
-        {
-            "id": 2,
-            "bank-description": "Exxon Gas",
-            "amount": 8.88
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "year": 2023,
+      "month": 3,
+      "day": 2,
+      "description": "Shell Gas",
+      "category": "",
+      "amount": 77.77
+    },
+    {
+      "id": 2,
+      "year": 2023,
+      "month": 3,
+      "day": 2,
+      "description": "Exxon Gas",
+      "category": "",
+      "amount": 8.88
+    },
+    {
+      "id": 3,
+      "year": 2023,
+      "month": 2,
+      "day": 25,
+      "description": "BP Gas",
+      "category": "",
+      "amount": 22.22
+    },
+    {
+      "id": 4,
+      "year": 2023,
+      "month": 2,
+      "day": 15,
+      "description": "Marathon Gas",
+      "category": "asdf",
+      "amount": 555.22
+    },
+    {
+      "id": "04dd",
+      "date": "2",
+      "description": "asdf",
+      "category": "test",
+      "amount": "1000"
+    },
+    {
+      "id": "bb9a",
+      "date": "3",
+      "description": "wert",
+      "category": "wret",
+      "amount": "7777"
+    },
+    {
+      "id": "1330",
+      "date": "7",
+      "description": "ertyt",
+      "category": "etyert",
+      "amount": "888"
+    },
+    {
+      "id": "fc3d",
+      "date": "dfghfd",
+      "description": "dfghgfh",
+      "category": "dgfhdfgh",
+      "amount": "3333"
+    },
+    {
+      "id": "986a",
+      "date": "9",
+      "description": "hjkhjgjkhj",
+      "category": "ghkjghjkghj",
+      "amount": "999"
+    },
+    {
+      "id": "f302",
+      "date": "9",
+      "description": "hjkhjgjkhj",
+      "category": "ghkjghjkghj",
+      "amount": "999"
+    },
+    {
+      "id": "36aa",
+      "date": "9",
+      "description": "hjkhjgjkhj",
+      "category": "ghkjghjkghj",
+      "amount": "999"
+    }
+  ]
 }
