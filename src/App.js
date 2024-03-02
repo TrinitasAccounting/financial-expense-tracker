@@ -4,7 +4,7 @@ import { Typography, CssBaseline } from '@mui/material'
 
 import ResponsiveDrawer from './components/ResponsiveDrawer';
 import TransactionsList from './components/TransactionList';
-import Temporary from './components/Temporary';
+import Temporary from './components/Dashboard';
 
 import NavBar from './components/NavBar';
 
@@ -16,6 +16,23 @@ import { useState, useEffect } from 'react';
 function App() {
 
   const [transactionsList, setTransactionsList] = useState([]);
+
+
+
+  // //Mapping over the initial transactions array
+  // const mappedTransactionsList = transactionList.map((transaction) => {
+  //   return transaction
+  // })
+
+  // console.log(mappedTransactionsList);
+
+
+
+
+
+
+
+
 
 
 
@@ -46,10 +63,10 @@ function App() {
 
   function handleAddTransaction(newTransaction) {
     const newTransactionArray = [...transactionsList, newTransaction];
-    setTransactionsList((transactionList) => newTransactionArray)
+    setTransactionsList(newTransactionArray)
   }
 
-  console.log(transactionsList)
+  // console.log(transactionsList)
 
 
 
@@ -66,11 +83,59 @@ function App() {
   // console.log(transactionsList)
 
 
-  const renderedTransactionList = transactionsList.map((transaction) => {
-    return transaction;
+
+
+  //Mapping over the initial transactions array____________________________________________
+  const mappedTransactionsList = transactionsList.map((transaction) => {
+    return transaction
   })
 
-  console.log(renderedTransactionList);
+  // console.log(mappedTransactionsList);
+
+
+
+
+
+
+
+
+  //Using Reduce to calculate our expense totals________________________________________________________
+
+  const totalMealsAndEntertainment = mappedTransactionsList.filter((transaction) => {
+    return (transaction.category === "Meals & Entertainment")
+  })
+
+  console.log(totalMealsAndEntertainment);
+
+
+
+  const totalGasAndFuel = mappedTransactionsList.filter((transaction) => {
+    return (transaction.category === "Gas & Fuel")
+  })
+
+  console.log(totalGasAndFuel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const renderedTransactionList = transactionsList.map((transaction) => {
+  //   return transaction;
+  // })
+
+  // // console.log(renderedTransactionList);
 
 
 
@@ -84,11 +149,13 @@ function App() {
       <Typography variant="h3">Hello World!</Typography>
       <NavBar />
       <Outlet context={{
-        trans: renderedTransactionList,
+        trans: mappedTransactionsList,
         setTrans: setTransactionsList,
         handleAddTransaction: handleAddTransaction,
         categ: categ,
-        categorySelection: categorySelection
+        categorySelection: categorySelection,
+        totalGasAndFuel: totalGasAndFuel,
+        totalMealsAndEntertainment: totalMealsAndEntertainment
       }} />
     </div>
   );

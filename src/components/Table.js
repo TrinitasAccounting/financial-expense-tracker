@@ -44,7 +44,7 @@ function createData(id, date, description, category, amount) {
 }
 
 
-
+// console.log(createData(13, 'Oreo', 437, 18.0, 63, 4.0));
 
 
 
@@ -254,7 +254,8 @@ EnhancedTableToolbar.propTypes = {
 
 export default function EnhancedTable(props) {
 
-    const [rerenderingTransactions, setRerenderingTransactions] = useState(props.trans)
+    // const [rerenderingTransactions, setRerenderingTransactions] = useState(props.trans)
+    const [rows, setRows] = useState([]);
 
     // console.log(props.trans);
 
@@ -272,7 +273,7 @@ export default function EnhancedTable(props) {
 
 
 
-    const rows = [];
+    // const rows = [];
 
 
     // useEffect(() => {
@@ -288,24 +289,36 @@ export default function EnhancedTable(props) {
 
 
 
-    const renderedTransactionList3 = props.trans.map((transaction) => {
-        return transaction;
-    })
+    // const renderedTransactionList3 = props.trans.map((transaction) => {
+    //     return transaction;
+    // })
 
-    console.log(renderedTransactionList3);
-
-
+    // console.log(renderedTransactionList3);
 
 
 
-    const testArray = renderedTransactionList3.map((tran) => {
-        return (
-            // createData(tran.id, tran.description, tran.description, tran.category, tran.amount)
-            rows.push(createData(tran.id, tran.year, tran.description, tran.category, tran.amount))
-        )
-    })
+
 
     // console.log(testArray);
+
+
+    // const testArray = renderedTransactionList3.map((tran) => {
+    //     return (
+    //         // createData(tran.id, tran.description, tran.description, tran.category, tran.amount)
+    //         // rows.push(createData(tran.id, tran.year, tran.description, tran.category, tran.amount))
+    //         tran
+    //     )
+    // })
+
+    // useEffect(() => {
+    //     const testArray = renderedTransactionList3.map((trans) => {
+    //         return (
+    //             // createData(tran.id, tran.description, tran.description, tran.category, tran.amount)
+    //             rows.push(createData(trans.id, trans.year, trans.description, trans.category, trans.amount))
+
+    //         )
+    //     })
+    // }, [props.setTrans])
 
 
 
@@ -315,6 +328,14 @@ export default function EnhancedTable(props) {
     // }
 
 
+    const testArray = props.trans.map((trans) => {
+        return (
+            // createData(tran.id, tran.description, tran.description, tran.category, tran.amount)
+            rows.push(createData(trans.id, trans.year, trans.description, trans.category, trans.amount))
+            // rows.push((trans.id, trans.year, trans.description, trans.category, trans.amount))
+
+        )
+    })
 
 
 

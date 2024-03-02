@@ -20,7 +20,7 @@ import Typography from '@mui/material/Typography';
 import { NavLink } from 'react-router-dom';
 
 
-import Temporary from './Temporary';
+import Temporary from './Dashboard';
 import TransactionsList from './TransactionList';
 
 

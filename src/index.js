@@ -6,7 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Temporary from './components/Temporary';
+import Dashboard from './components/Dashboard';
 import TransactionsList from './components/TransactionList';
 import RevenueDashboard from './components/RevenueDashboard';
 
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Temporary />
+                element: <Dashboard />
             },
             {
                 path: "/transactions",

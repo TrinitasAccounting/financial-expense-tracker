@@ -4,6 +4,8 @@ import { Typography } from "@mui/material";
 import { useOutletContext, Outlet } from "react-router-dom";
 import Table from "./Table";
 import Form from "./Form";
+import TableSimple from "./TableSimple";
+import './TableSimple.css';
 
 
 function TransactionsList() {
@@ -27,7 +29,7 @@ function TransactionsList() {
         return transaction;
     })
 
-    console.log(renderedTransactionList2);
+    // console.log(renderedTransactionList2);
 
     return (
         <div>
@@ -38,7 +40,8 @@ function TransactionsList() {
                 <input />
             </form> */}
             <Form setTrans={setTrans} handleAddTransaction={handleAddTransaction} />
-            <Table trans={renderedTransactionList2} categ={categ} categorySelection={categorySelection} />
+            <TableSimple className="table-simple" trans={trans} />
+            {/* <Table trans={renderedTransactionList2} setTrans={setTrans} categ={categ} categorySelection={categorySelection} /> */}
             {/* {transactionsToShow} */}
 
 

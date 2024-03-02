@@ -5,8 +5,9 @@
       "year": 2023,
       "month": 3,
       "day": 2,
+      "date": "3/2/2023",
       "description": "Shell Gas",
-      "category": "",
+      "category": "Gas & Fuel",
       "amount": 77.77
     },
     {
@@ -14,8 +15,9 @@
       "year": 2023,
       "month": 3,
       "day": 2,
+      "date": "3/2/2023",
       "description": "Exxon Gas",
-      "category": "",
+      "category": "Gas & Fuel",
       "amount": 8.88
     },
     {
@@ -23,8 +25,9 @@
       "year": 2023,
       "month": 2,
       "day": 25,
+      "date": "2/25/2023",
       "description": "BP Gas",
-      "category": "",
+      "category": "Gas & Fuel",
       "amount": 22.22
     },
     {
@@ -32,58 +35,66 @@
       "year": 2023,
       "month": 2,
       "day": 15,
+      "date": "2/15/2023",
       "description": "Marathon Gas",
-      "category": "asdf",
+      "category": "Gas & Fuel",
       "amount": 555.22
     },
     {
-      "id": "04dd",
-      "date": "2",
-      "description": "asdf",
-      "category": "test",
+      "id": "5322",
+      "date": "3/2/2023",
+      "description": "Subway",
+      "category": "Meals & Entertainment",
+      "amount": "43.42"
+    },
+    {
+      "id": "d5ac",
+      "date": "3/2/2023",
+      "description": "Wendys",
+      "category": "Meals & Entertainment",
+      "amount": "21.98"
+    },
+    {
+      "id": "cfb6",
+      "date": "3/2/2023",
+      "description": "Taco Bell",
+      "category": "Meals & Entertainment",
+      "amount": "7.87"
+    },
+    {
+      "id": "56b6",
+      "date": "3/2/2023",
+      "description": "Apartment",
+      "category": "Rent & Lease",
+      "amount": "1300"
+    },
+    {
+      "id": "b902",
+      "date": "3/2/2023",
+      "description": "Car Rental",
+      "category": "Rent & Lease",
+      "amount": "433.33"
+    },
+    {
+      "id": "c3e3",
+      "date": "3/2/2023",
+      "description": "Burger King",
+      "category": "Meals & Entertainment",
       "amount": "1000"
     },
     {
-      "id": "bb9a",
-      "date": "3",
-      "description": "wert",
-      "category": "wret",
-      "amount": "7777"
+      "id": "6e81",
+      "date": "3/2/2023",
+      "description": "Exxon",
+      "category": "Gas & Fuel",
+      "amount": "900"
     },
     {
-      "id": "1330",
-      "date": "7",
-      "description": "ertyt",
-      "category": "etyert",
-      "amount": "888"
-    },
-    {
-      "id": "fc3d",
-      "date": "dfghfd",
-      "description": "dfghgfh",
-      "category": "dgfhdfgh",
-      "amount": "3333"
-    },
-    {
-      "id": "986a",
-      "date": "9",
-      "description": "hjkhjgjkhj",
-      "category": "ghkjghjkghj",
-      "amount": "999"
-    },
-    {
-      "id": "f302",
-      "date": "9",
-      "description": "hjkhjgjkhj",
-      "category": "ghkjghjkghj",
-      "amount": "999"
-    },
-    {
-      "id": "36aa",
-      "date": "9",
-      "description": "hjkhjgjkhj",
-      "category": "ghkjghjkghj",
-      "amount": "999"
+      "id": "2350",
+      "date": "3/2/2023",
+      "description": "Exxon",
+      "category": "Gas & Fuel",
+      "amount": "1550"
     }
   ]
 }
