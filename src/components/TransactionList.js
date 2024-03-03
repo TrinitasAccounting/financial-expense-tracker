@@ -7,6 +7,7 @@ import Form from "./Form";
 import TableSimple from "./TableSimple";
 import './TableSimple.css';
 import './TransactionList.css';
+import TableNewTest from './TableNewTest';
 
 
 function TransactionsList() {
@@ -44,8 +45,11 @@ function TransactionsList() {
             <div className='form-transaction-add'>
                 <Form setTrans={setTrans} handleAddTransaction={handleAddTransaction} />
             </div>
-            <div className='transactions-table'>
+            {/* <div className='transactions-table'>
                 <TableSimple className="table-simple" trans={trans} />
+            </div> */}
+            <div className="transactions-table">
+                <TableNewTest trans={trans} />
             </div>
             {/* <Table trans={renderedTransactionList2} setTrans={setTrans} categ={categ} categorySelection={categorySelection} /> */}
             {/* {transactionsToShow} */}

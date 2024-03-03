@@ -105,7 +105,7 @@ function App() {
     return (transaction.category === "Meals & Entertainment")
   })
 
-  console.log(totalMealsAndEntertainment);
+  // console.log(totalMealsAndEntertainment);
 
 
 
@@ -113,7 +113,7 @@ function App() {
     return (transaction.category === "Gas & Fuel")
   })
 
-  console.log(totalGasAndFuel);
+  // console.log(totalGasAndFuel);
 
 
 

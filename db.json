@@ -83,20 +83,6 @@
       "amount": "1000"
     },
     {
-      "id": "6e81",
-      "date": "3/2/2023",
-      "description": "Exxon",
-      "category": "Gas & Fuel",
-      "amount": "900"
-    },
-    {
-      "id": "2350",
-      "date": "3/2/2023",
-      "description": "Exxon",
-      "category": "Gas & Fuel",
-      "amount": "1550"
-    },
-    {
       "id": "7542",
       "date": "3/2/2023",
       "description": "Services Income",
@@ -139,11 +125,53 @@
       "amount": "3330"
     },
     {
-      "id": "7dc0",
-      "date": "7/15/2023",
-      "description": "Rentals",
+      "id": "8027",
+      "date": "1/7/2023",
+      "description": "Random Contract Income",
       "category": "Sales",
-      "amount": "3000"
+      "amount": "1700"
+    },
+    {
+      "id": "6932",
+      "date": "1/28/2023",
+      "description": "Steak House",
+      "category": "Meals & Entertainment",
+      "amount": "89.45"
+    },
+    {
+      "id": "19f1",
+      "date": "2/1/2023",
+      "description": "Home Depot",
+      "category": "Job Supplies",
+      "amount": "455.89"
+    },
+    {
+      "id": "a745",
+      "date": "2/3/2023",
+      "description": "Visa Credit Card ",
+      "category": "Interest Expense",
+      "amount": "34.55"
+    },
+    {
+      "id": "b193",
+      "date": "1/22/2023",
+      "description": "Discover",
+      "category": "Interest Expense",
+      "amount": "211.22"
+    },
+    {
+      "id": "3fdf",
+      "date": "1/29/2023",
+      "description": "Hulu",
+      "category": "Subscriptions",
+      "amount": "23.01"
+    },
+    {
+      "id": "6230",
+      "date": "2/29/2023",
+      "description": "Netflix",
+      "category": "",
+      "amount": "18.99"
     }
   ]
 }

@@ -23,6 +23,13 @@ function Form({ setTrans, handleAddTransaction }) {
         })
     }
 
+    function handleCategoryChange(event) {
+        setFormData({
+            ...formData,
+            category: event.target.value
+        })
+    }
+
     // console.log(formData);
 
     function addATransaction(event) {
@@ -36,6 +43,13 @@ function Form({ setTrans, handleAddTransaction }) {
         })
             .then(res => res.json())
             .then(data => handleAddTransaction(data))
+
+        setFormData({
+            date: "",
+            description: "",
+            category: "",
+            amount: ""
+        })
     }
 
 
@@ -51,12 +65,23 @@ function Form({ setTrans, handleAddTransaction }) {
             <label htmlFor="description">Description</label>
             <input type="text" id="description" value={formData.description} onChange={handleChange} className="input" />
             <label htmlFor="category">Category</label>
-            <input type="text" id="category" value={formData.category} onChange={handleChange} className="input" />
+            {/* <input type="text" id="category" value={formData.category} onChange={handleChange} className="input" /> */}
+            <select onChange={handleCategoryChange} className="select-category-box">
+                <option value="Meals & Entertainment">Meals & Entertainment</option>
+                <option value="Gas & Fuel">Gas & Fuel</option>
+                <option value="Sales">Sales</option>
+                <option value="Rent & Lease">Rent & Lease</option>
+                <option value="Job Supplies">Job Supplies</option>
+                <option value="Interest Expense">Interest Expense</option>
+                <option value="Subscriptions">Subscriptions</option>
+            </select>
             <label htmlFor="amount">Amount</label>
             <input type="text" id="amount" value={formData.amount} onChange={handleChange} className="input" />
             <button>Submit</button>
         </form>
     )
 }
+
+
 
 export default Form;

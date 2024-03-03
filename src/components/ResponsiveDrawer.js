@@ -110,7 +110,7 @@ function ResponsiveDrawer(props) {
               {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
             </ListItemIcon>
             <NavLink to="/">
-              <ListItemText primary="Dashboard" />
+              <ListItemText primary="Dashboard" style={{ color: '#000000', textDecoration: 'none', fontSize: '20px' }} />
             </NavLink>
           </ListItemButton>
         </ListItem>

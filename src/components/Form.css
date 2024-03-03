@@ -1,7 +1,21 @@
-input[type='text'] {
+/* input[type='text'] {
     padding: 10px;
-}
+} */
 
 .input {
+    padding: 20px;
+    /* background-color: black; */
+    /* height: -px; */
+    /* padding-left: 5px; */
+}
+
+.select-category-box {
+    height: 55px;
+}
+
+label {
+    /* background-color: black; */
+    font-weight: 400;
+    font-size: x-large;
     padding: 20px;
 }
