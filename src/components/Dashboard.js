@@ -14,7 +14,7 @@ function Dashboard() {
 
     return (
         <div>
-            <Typography variant="h1" style={{ marginTop: '50px', paddingBottom: '50px', color: '#000000' }}>Financial KPI's Dashboard</Typography>
+            <Typography variant="h1" style={{ marginTop: '50px', paddingBottom: '50px', color: '#343c63' }}>Financial KPI's Dashboard</Typography>
             <Typography variant='h5' style={{ position: 'absolute', left: '612px', top: '255px' }}>Expenses Breakdown</Typography>
             <PieChartExpenses trans={trans} totalGasAndFuel={totalGasAndFuel} totalMealsAndEntertainment={totalMealsAndEntertainment} />
             <div className="revenue-bar-chart">

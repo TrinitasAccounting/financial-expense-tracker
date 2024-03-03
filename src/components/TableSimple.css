@@ -11,8 +11,10 @@ td {
     border-bottom: 1px solid #ddd;
     width: 3000px;
     height: 40px;
+    background-color: rgb(248, 248, 248)
 }
 
 th {
-    background-color: rgb(63, 170, 54);
+    background-color: rgb(19, 29, 78);
+    color: white;
 }
