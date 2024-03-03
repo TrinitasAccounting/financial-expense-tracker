@@ -147,7 +147,7 @@ function App() {
 
       {/* <h1>Hello World!</h1> */}
       <Typography variant="h3">Hello World!</Typography>
-      <NavBar />
+      {/* <NavBar /> */}
       <Outlet context={{
         trans: mappedTransactionsList,
         setTrans: setTransactionsList,

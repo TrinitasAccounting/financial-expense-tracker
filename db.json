@@ -95,6 +95,55 @@
       "description": "Exxon",
       "category": "Gas & Fuel",
       "amount": "1550"
+    },
+    {
+      "id": "7542",
+      "date": "3/2/2023",
+      "description": "Services Income",
+      "category": "Sales",
+      "amount": "2000"
+    },
+    {
+      "id": "932b",
+      "date": "3/1/2023",
+      "description": "Rental Income",
+      "category": "Sales",
+      "amount": "5400"
+    },
+    {
+      "id": "f4bd",
+      "date": "2/27/2023",
+      "description": "Rental Income",
+      "category": "Sales",
+      "amount": "4800"
+    },
+    {
+      "id": "c78d",
+      "date": "2/10/2023",
+      "description": "Rental Income",
+      "category": "Sales",
+      "amount": "200"
+    },
+    {
+      "id": "17c7",
+      "date": "1/28/2023",
+      "description": "Rentals Revenue",
+      "category": "Sales",
+      "amount": "3900"
+    },
+    {
+      "id": "2922",
+      "date": "1/18/2023",
+      "description": "Service Income",
+      "category": "Sales",
+      "amount": "3330"
+    },
+    {
+      "id": "7dc0",
+      "date": "7/15/2023",
+      "description": "Rentals",
+      "category": "Sales",
+      "amount": "3000"
     }
   ]
 }

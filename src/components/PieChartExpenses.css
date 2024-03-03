@@ -1,9 +1,10 @@
 .pie-chart-expenses {
-    background-color: #bdbdbd;
-    width: 500px;
+    background-color: #ffffff;
+    width: 650px;
     height: 210px;
     position: absolute;
     left: 400px;
+    top: 300px;
     border: 3px solid #151515;
 
     padding-left: 100px;

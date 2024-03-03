@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import './Form.css'
 
 function Form({ setTrans, handleAddTransaction }) {
 
@@ -46,13 +47,13 @@ function Form({ setTrans, handleAddTransaction }) {
     return (
         <form onSubmit={addATransaction}>
             <label for="date">Date</label>
-            <input type="text" id="date" value={formData.date} onChange={handleChange} />
+            <input type="text" id="date" value={formData.date} onChange={handleChange} className="input" />
             <label for="description">Description</label>
-            <input type="text" id="description" value={formData.description} onChange={handleChange} />
+            <input type="text" id="description" value={formData.description} onChange={handleChange} className="input" />
             <label for="category">Category</label>
-            <input type="text" id="category" value={formData.category} onChange={handleChange} />
+            <input type="text" id="category" value={formData.category} onChange={handleChange} className="input" />
             <label for="amount">Amount</label>
-            <input type="text" id="amount" value={formData.amount} onChange={handleChange} />
+            <input type="text" id="amount" value={formData.amount} onChange={handleChange} className="input" />
             <button>Submit</button>
         </form>
     )
