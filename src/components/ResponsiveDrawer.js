@@ -131,13 +131,13 @@ function ResponsiveDrawer(props) {
 
 
       <List>
-        <ListItem key="Revenue" disablePadding>
+        <ListItem key="Profile" disablePadding>
           <ListItemButton>
             <ListItemIcon>
               {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
             </ListItemIcon>
-            <NavLink to="/revenue">
-              <ListItemText primary="Revenue" />
+            <NavLink to="/profile">
+              <ListItemText primary="Profile" />
             </NavLink>
           </ListItemButton>
         </ListItem>

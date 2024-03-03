@@ -1,17 +1,190 @@
 
 import * as React from 'react';
-import Skeleton from '@mui/material/Skeleton';
-import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import ImageAvatars from './ProfileAvatar';
+import './Profile.css';
 
-export default function Variants() {
+export default function StateTextFields() {
+    // const [name, setName] = React.useState('Cat in the Hat');
+
     return (
-        <Stack spacing={1}>
-            {/* For variant="text", adjust the height via font-size */}
-            <Skeleton variant="text" sx={{ fontSize: '1rem' }} />
-            {/* For other variants, adjust the size with `width` and `height` */}
-            <Skeleton variant="circular" width={40} height={40} />
-            <Skeleton variant="rectangular" width={210} height={60} />
-            <Skeleton variant="rounded" width={210} height={60} />
-        </Stack>
+        <>
+            <div className="profile-avatar">
+                <ImageAvatars />
+            </div>
+            <Box
+                style={{ marginTop: '200px', marginLeft: '00px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '80ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Profile Name"
+                    defaultValue="John Smith"
+                />
+            </Box>
+            <Box
+                style={{ marginTop: '50px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '25.5ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Age"
+                    defaultValue="42"
+                />
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Email"
+                    defaultValue="JohnSmith@gmail.com"
+                />
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Phone"
+                    defaultValue="123-456-7890"
+                />
+
+            </Box>
+            <Box
+                style={{ marginTop: '20px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '80ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Address"
+                    defaultValue="1234 Broadway, New York City 56789"
+                />
+            </Box>
+            <Box
+                style={{ marginTop: '20px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '80ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Business Entity (Optional)"
+                    defaultValue="ABC Company, LLC"
+                />
+            </Box>
+            <Box
+                style={{ marginTop: '70px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '80ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Instagram Handle (Optional)"
+                    defaultValue="JohnSmith777"
+                />
+            </Box>
+            <Box
+                style={{ marginTop: '20px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '80ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Twitter (Optional)"
+                    defaultValue="JohnTweets@Smith"
+                />
+            </Box>
+            <Box
+                style={{ marginTop: '20px' }}
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '80ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                {/* <TextField
+                id="outlined-controlled"
+                label="Controlled"
+                value={name}
+                onChange={(event) => {
+                    setName(event.target.value);
+                }}
+            /> */}
+                <TextField
+                    id="outlined-uncontrolled"
+                    label="Facebook Link (Optional)"
+                    defaultValue="Mr. John Smith"
+                />
+            </Box>
+        </>
     );
 }

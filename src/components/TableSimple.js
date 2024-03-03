@@ -23,8 +23,7 @@ class TableSimple extends Component {
         // console.log(newBodyArray);
 
         let heading = ["Date", "Description", "Category", "Amount"];
-        let body = [...newBodyArray
-        ];
+        let body = [...newBodyArray];
 
         // console.log(this.props.trans);
 

@@ -13,7 +13,7 @@ function Form({ setTrans, handleAddTransaction }) {
         date: "",
         description: "",
         category: "",
-        amount: null
+        amount: ""
     })
 
     function handleChange(event) {
@@ -46,13 +46,13 @@ function Form({ setTrans, handleAddTransaction }) {
 
     return (
         <form onSubmit={addATransaction}>
-            <label for="date">Date</label>
+            <label htmlFor="date">Date</label>
             <input type="text" id="date" value={formData.date} onChange={handleChange} className="input" />
-            <label for="description">Description</label>
+            <label htmlFor="description">Description</label>
             <input type="text" id="description" value={formData.description} onChange={handleChange} className="input" />
-            <label for="category">Category</label>
+            <label htmlFor="category">Category</label>
             <input type="text" id="category" value={formData.category} onChange={handleChange} className="input" />
-            <label for="amount">Amount</label>
+            <label htmlFor="amount">Amount</label>
             <input type="text" id="amount" value={formData.amount} onChange={handleChange} className="input" />
             <button>Submit</button>
         </form>

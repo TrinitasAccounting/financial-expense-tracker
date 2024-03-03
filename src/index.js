@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import TransactionsList from './components/TransactionList';
 import RevenueDashboard from './components/RevenueDashboard';
+import Profile from './components/Profile';
 
 
 const router = createBrowserRouter([
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
                 element: <TransactionsList />
             },
             {
-                path: "/revenue",
-                element: <RevenueDashboard />
+                path: "/profile",
+                element: <Profile />
             }
         ]
     }
