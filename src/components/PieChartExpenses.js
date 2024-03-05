@@ -1,14 +1,13 @@
 
 import * as React from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
-// import { PieChart } from '@mui/material';
 
 import './PieChartExpenses.css'
 
 
 export default function PieChartExpenses({ toatGasAndFuel, totalMealsAndEntertainment, trans }) {
 
-    // console.log(trans);
+
 
     let totalExpensesMealsAndEntertainment = 0;
     let totalExpensesGasAndFuel = 0;
@@ -39,8 +38,7 @@ export default function PieChartExpenses({ toatGasAndFuel, totalMealsAndEntertai
 
     })
 
-    // console.log(totalExpensesMealsAndEntertainment);
-    // console.log(totalExpensesGasAndFuel);
+
 
     const data = [
         { id: 0, value: totalExpensesGasAndFuel, label: 'Gas & Fuel' },

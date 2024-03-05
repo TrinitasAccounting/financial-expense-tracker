@@ -172,6 +172,13 @@
       "description": "Netflix",
       "category": "",
       "amount": "18.99"
+    },
+    {
+      "id": "b9ca",
+      "date": "3/1/2023",
+      "description": "Netta BenShabu",
+      "category": "Job Supplies",
+      "amount": "677.77"
     }
   ]
 }

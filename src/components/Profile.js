@@ -6,7 +6,7 @@ import ImageAvatars from './ProfileAvatar';
 import './Profile.css';
 
 export default function StateTextFields() {
-    // const [name, setName] = React.useState('Cat in the Hat');
+
 
     return (
         <>
@@ -22,14 +22,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Profile Name"
@@ -45,14 +38,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Age"
@@ -79,14 +65,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Address"
@@ -102,14 +81,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Business Entity (Optional)"
@@ -125,14 +97,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Instagram Handle (Optional)"
@@ -148,14 +113,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Twitter (Optional)"
@@ -171,14 +129,7 @@ export default function StateTextFields() {
                 noValidate
                 autoComplete="off"
             >
-                {/* <TextField
-                id="outlined-controlled"
-                label="Controlled"
-                value={name}
-                onChange={(event) => {
-                    setName(event.target.value);
-                }}
-            /> */}
+
                 <TextField
                     id="outlined-uncontrolled"
                     label="Facebook Link (Optional)"

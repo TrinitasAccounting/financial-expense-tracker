@@ -9,8 +9,6 @@ function Dashboard() {
 
     const { totalGasAndFuel, totalMealsAndEntertainment, trans } = useOutletContext();
 
-    // console.log(totalGasAndFuel);
-    // console.log(totalMealsAndEntertainment);
 
     return (
         <div>

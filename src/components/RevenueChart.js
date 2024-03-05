@@ -12,56 +12,7 @@ const chartSetting = {
     width: 650,
     height: 400,
 };
-// const dataset = [
-//     {
-//         revenue: 21,
-//         month: 'Jan',
-//     },
-//     {
-//         revenue: 28,
-//         month: 'Feb',
-//     },
-//     {
-//         revenue: 41,
-//         month: 'Mar',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'Apr',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'May',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'June',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'July',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'Aug',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'Sept',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'Oct',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'Nov',
-//     },
-//     {
-//         revenue: 0,
-//         month: 'Dec',
-//     },
-// ];
+
 
 const valueFormatter = (value) => `$${value}`;
 
