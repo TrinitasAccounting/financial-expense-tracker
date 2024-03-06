@@ -19,23 +19,6 @@ function App() {
 
 
 
-  // //Mapping over the initial transactions array
-  // const mappedTransactionsList = transactionList.map((transaction) => {
-  //   return transaction
-  // })
-
-  // console.log(mappedTransactionsList);
-
-
-
-
-
-
-
-
-
-
-
   //Choosing Category Information, State, and Effects
   const [categ, setCateg] = useState(789);
 
@@ -143,11 +126,8 @@ function App() {
   return (
     <div className="App">
       <ResponsiveDrawer />
-      {/* <NavBar /> */}
 
-      {/* <h1>Hello World!</h1> */}
       <Typography variant="h3">Hello World!</Typography>
-      {/* <NavBar /> */}
       <Outlet context={{
         trans: mappedTransactionsList,
         setTrans: setTransactionsList,
